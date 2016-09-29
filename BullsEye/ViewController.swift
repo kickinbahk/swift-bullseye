@@ -13,10 +13,10 @@ class ViewController: UIViewController {
   @IBOutlet weak var targetLabel: UILabel!
   @IBOutlet weak var roundLabel: UILabel!
   @IBOutlet weak var scoreLabel: UILabel!
-  var currentValue: Int = 0
-  var targetValue: Int = 0
-  var roundValue: Int = 0
-  var scoreValue: Int = 0
+  var currentValue = 0
+  var targetValue = 0
+  var roundValue = 0
+  var scoreValue = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
