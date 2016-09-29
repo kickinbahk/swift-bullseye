@@ -103,6 +103,7 @@
                     </view>
                     <connections>
                         <outlet property="roundLabel" destination="DNo-8p-rvd" id="Kz8-GN-Wb7"/>
+                        <outlet property="scoreLabel" destination="9dV-Qj-IiN" id="bfo-h2-Gyj"/>
                         <outlet property="slider" destination="P8E-Qo-chm" id="zHD-KW-0Ra"/>
                         <outlet property="targetLabel" destination="HHV-xW-1J9" id="SkR-hO-6P5"/>
                     </connections>
