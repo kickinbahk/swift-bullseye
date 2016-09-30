@@ -1,11 +1,3 @@
-//
-//  ViewController.swift
-//  BullsEye
-//
-//  Created by Josiah Mory on 9/28/16.
-//  Copyright © 2016 kickinbahk Productions. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
