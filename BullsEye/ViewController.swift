@@ -13,6 +13,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var targetLabel: UILabel!
   @IBOutlet weak var roundLabel: UILabel!
   @IBOutlet weak var scoreLabel: UILabel!
+  
   var currentValue = 0
   var targetValue = 0
   var roundValue = 0
@@ -20,7 +21,7 @@ class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    startNewRound()
+    startNewGame()
   }
 
   override func didReceiveMemoryWarning() {
@@ -68,6 +69,13 @@ class ViewController: UIViewController {
 
   @IBAction func sliderMoved(_ slider: UISlider) {
     currentValue = lroundf(slider.value)
+  }
+  
+
+  @IBAction func startNewGame() {
+    scoreValue = 0
+    roundValue = 0
+    startNewRound()
   }
   
   func startNewRound() {
