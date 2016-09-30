@@ -1,4 +1,5 @@
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
   @IBOutlet weak var slider: UISlider!
@@ -76,8 +77,17 @@ class ViewController: UIViewController {
     currentValue = lroundf(slider.value)
   }
   
-
-  @IBAction func startNewGame() {
+  @IBAction func startOver () {
+    startNewGame()
+  
+    let transition = CATransition()
+    transition.type = kCATransition
+    transition.duration = 1
+    transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+    view.layer.add(transition, forKey: nil)
+  }
+  
+  func startNewGame() {
     scoreValue = 0
     roundValue = 0
     startNewRound()
