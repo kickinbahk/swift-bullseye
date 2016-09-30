@@ -34,11 +34,6 @@ class ViewController: UIViewController {
     
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-
   @IBAction func showAlert() {
     let difference = abs(currentValue - targetValue)
     let points = 100 - difference
@@ -99,6 +94,12 @@ class ViewController: UIViewController {
     targetLabel.text = String(targetValue)
     roundLabel.text = String(roundValue)
     scoreLabel.text = String(scoreValue)
+  }
+  
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
   }
 }
 
